@@ -156,7 +156,7 @@ module "elasticsearch" {
   instance_type           = "t3.small.elasticsearch"
   instance_count          = 3
   ebs_volume_size         = 10
-  create_iam_service_linked_role = true # Set it to false if you already have an ElasticSearch cluster created in the AWS account and AWSServiceRoleForAmazonElasticsearchService already exist.
+  create_iam_service_linked_role = false # Set it to false if you already have an ElasticSearch cluster created in the AWS account and AWSServiceRoleForAmazonElasticsearchService already exist.
   iam_role_arns           = ["arn:aws:iam::${data.aws_caller_identity.current.account_id}:user/cloud_user","*"]
   iam_actions             = ["es:*"]
   encrypt_at_rest_enabled = true
