@@ -15,4 +15,4 @@ kubectl run redis --image=redis --port=6379
 
 - Update file 2-service-account.yaml line number 8 (fluent-bit ARN)
 
-- Update file 3-fluent-bit.yaml line number 78 & 82 (76 endpoint of elasticsearch & 82 is aws region)
+- Update file 3-fluent-bit.yaml line number 78 & 82 (78 endpoint of elasticsearch & 82 is aws region)
